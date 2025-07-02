@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4Studio | JavaScript Animation Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>A4Studio</h2>
+                <span class="version">4.0.0</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#docs">Docs</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#sponsor" class="sponsor-btn">Sponsor</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">All-in-one animation engine</span>
+                </h1>
+                <p class="hero-subtitle">
+                    A fast and versatile JavaScript library to animate the web
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">npm i a4studio</button>
+                    <button class="btn btn-secondary">Learn more</button>
+                </div>
+            </div>
+            <div class="hero-demo">
+                <div class="demo-container">
+                    <div class="square demo-element"></div>
+                    <div class="circle demo-element"></div>
+                    <div class="triangle demo-element"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">The complete animator's toolbox</h2>
+            <p class="section-subtitle">
+                Break free from browser limitations and animate anything on the web with a single API.
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Intuitive API</h3>
+                    <p>Animate faster with an easy-to-use, yet powerful animation API.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Per property parameters</h3>
+                    <p>Flexible keyframes system with individual property control.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Built-in easings</h3>
+                    <p>Enhanced transforms with smooth easing functions.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Enhanced transforms</h3>
+                    <p>Smoothly blend individual CSS transform properties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Examples Section -->
+    <section class="examples">
+        <div class="container">
+            <h2 class="section-title">Getting started</h2>
+            <p class="section-subtitle">Start animating with our powerful API</p>
+            
+            <div class="examples-grid">
+                <div class="example-card">
+                    <h3>Basic Animation</h3>
+                    <pre><code>animate('.square', {
+  rotate: 90,
+  loop: true,
+  ease: 'inOutExpo',
+});</code></pre>
+                    <div class="example-demo">
+                        <div class="demo-square"></div>
+                    </div>
+                </div>
+                
+                <div class="example-card">
+                    <h3>Random Animation</h3>
+                    <pre><code>animate('.shape', {
+  x: random(-100, 100),
+  y: random(-100, 100),
+  rotate: random(-180, 180),
+  duration: random(500, 1000),
+  composition: 'blend',
+});</code></pre>
+                    <div class="example-demo">
+                        <div class="demo-shape"></div>
+                    </div>
+                </div>
+                
+                <div class="example-card">
+                    <h3>Timeline Animation</h3>
+                    <pre><code>createTimeline()
+  .add('.dot', {
+    scale: stagger([1.1, .75]),
+    ease: 'inOutQuad',
+  }, stagger(200));</code></pre>
+                    <div class="example-demo">
+                        <div class="demo-dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>A4Studio</h3>
+                    <p>The complete JavaScript animation engine for the modern web.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="#docs">Documentation</a>
+                        <a href="#examples">Examples</a>
+                        <a href="#github">GitHub</a>
+                        <a href="#sponsor">Sponsor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 A4Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
